@@ -21,57 +21,60 @@ const Navbar = () => {
         <section>
             <div
                 id="nav"
-                className="w-full bg-gradient-to-l  from-white/45 via-custom-emerald to-custom-emerald  lg:px-28 py-3 flex items-center justify-between backdrop-blur-lg fixed top-0 z-50 "
+                className="w-full bg-gradient-to-l from-emerald-300 via-custom-emerald to-custom-emerald lg:px-10 py-4 flex items-center justify-between backdrop-blur-lg fixed top-0 z-50"
             >
                 <div className="flex ml-4 opacity-100 items-center gap-3">
                     <img
-                        src="/public/images/logo.png"
+                        src="/images/logo.png"
                         alt=""
                         className="w-8 rounded-full lg:w-8"
                     />
-                    <h1 className="font-bold whitespace-nowrap text-white lg:text-3xl text-2xl">
+                    <h1 className="font-bold whitespace-nowrap text-white lg:text-2xl text-2xl">
                         P2D
                     </h1>
                 </div>
-                <div className="items-center flex">
-                    <div className="hidden lg:flex items-center gap-14 mt-2 text-zinc-900 font-semibold">
+                <div className="items-center flex gap-10">
+                    <div className="hidden lg:flex items-center gap-10 text-zinc-900 font-medium text-sm">
                         <NavLink
-                            to={"/"}
+                            to="/"
                             className={({ isActive }) =>
-                                isActive
-                                    ? "text-white after:content-[''] after:bottom-0 after:h-[5px] after:bg-white after:absolute after:rounded-full relative pb-2 hover:after:w-[5px] active:after:w-[15px] after:transition-all after:duration-500 after:left-1/2 after:-translate-x-1/2 after:w-full after:left-0 after:right-0 after:transition-all after:duration-500"
-                                    : "text-white  after:content-[''] after:bottom-0 after:h-[5px] after:bg-yelloe-400 after:absolute after:rounded-full relative pb-2 hover:after:w-[5px] active:after:w-[15px] after:transition-all after:duration-500 after:left-1/2 after:-translate-x-1/2"
+                                `relative pb-1 text-white after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:rounded-full after:transition-all after:duration-500 ${isActive
+                                    ? 'after:bg-white after:w-full'
+                                    : 'after:bg-white after:w-0 hover:after:w-full'
+                                }`
                             }
                         >
                             Jadwal
                         </NavLink>
                         <NavLink
-                            to={"/"}
+                            to="/"
                             className={({ isActive }) =>
-                                isActive
-                                    ? "text-white after:content-[''] after:bottom-0 after:h-[5px] after:bg-white after:absolute after:rounded-full relative pb-2 hover:after:w-[5px] active:after:w-[15px] after:transition-all after:duration-500 after:left-1/2 after:-translate-x-1/2 after:w-full after:left-0 after:right-0 after:transition-all after:duration-500"
-                                    : "text-white  after:content-[''] after:bottom-0 after:h-[5px] after:bg-yelloe-400 after:absolute after:rounded-full relative pb-2 hover:after:w-[5px] active:after:w-[15px] after:transition-all after:duration-500 after:left-1/2 after:-translate-x-1/2"
+                                `relative pb-1 text-white after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:rounded-full after:transition-all after:duration-500 ${isActive
+                                    ? 'after:bg-white after:w-full'
+                                    : 'after:bg-white after:w-0 hover:after:w-full'
+                                }`
                             }
                         >
                             Konseling
                         </NavLink>
                         <NavLink
-                            to={"/"}
+                            to="/"
                             className={({ isActive }) =>
-                                isActive
-                                    ? "text-white after:content-[''] after:bottom-0 after:h-[5px] after:bg-white after:absolute after:rounded-full relative pb-2 hover:after:w-[5px] active:after:w-[15px] after:transition-all after:duration-500 after:left-1/2 after:-translate-x-1/2 after:w-full after:left-0 after:right-0 after:transition-all after:duration-500"
-                                    : "text-white  after:content-[''] after:bottom-0 after:h-[5px] after:bg-yelloe-400 after:absolute after:rounded-full relative pb-2 hover:after:w-[5px] active:after:w-[15px] after:transition-all after:duration-500 after:left-1/2 after:-translate-x-1/2"
+                                `relative pb-1 text-white after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:rounded-full after:transition-all after:duration-500 ${isActive
+                                    ? 'after:bg-white after:w-full'
+                                    : 'after:bg-white after:w-0 hover:after:w-full'
+                                }`
                             }
                         >
                             Cek Pertumbuhan
                         </NavLink>
                     </div>
-                    <div className="lg:ml-32">
+                    <div className="">
                         <Link
                             to="/"
-                            className="lg:flex hidden bg-shades py-2.5 px-5 rounded-lg font-bold text-white whitespace-nowrap items-center gap-2"
+                            className="lg:flex hidden bg-shades py-2.5 px-5 rounded-lg font-semibold text-white whitespace-nowrap items-center gap-2 text-sm"
                         >
-                            Sign-In <IconLogin2></IconLogin2>
+                            Masuk <IconLogin2></IconLogin2>
                         </Link>
                     </div>
                 </div>
@@ -96,9 +99,9 @@ const Navbar = () => {
                                     </NavLink>
                                     <Link
                                         to="/"
-                                        className="flex lg:hidden bg-shades py-2.5 px-5 rounded-lg font-bold text-white whitespace-nowrap items-center gap-2"
+                                        className="flex lg:hidden bg-shades py-2.5 px-5 rounded-lg font-semibold text-white whitespace-nowrap items-center gap-2"
                                     >
-                                        Sign-In <IconLogin2></IconLogin2>
+                                        Masuk <IconLogin2></IconLogin2>
                                     </Link>
                                 </div>
                             </div>

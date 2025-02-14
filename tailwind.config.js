@@ -8,7 +8,8 @@ module.exports = {
       extend: {
         colors: {
           "custom-emerald": "#008970",
-          "shades" : "#008970"
+          "shades" : "#008970",
+          'foreground': '#212121'
         },
         fontFamily: {
           sans: ["Graphik", "sans-serif"],
