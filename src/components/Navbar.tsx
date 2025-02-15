@@ -83,7 +83,7 @@ const Navbar = () => {
                 <div className="relative lg:hidden mt-2 px-12">
                     {isOpen ? (
                         <>
-                            <button onClick={openMenu} className="text-black  ">
+                            <button onClick={openMenu} className="text-white  ">
                                 <IconX></IconX>
                             </button>
                             <div className="top-8 absolute right-2 bg-white z-20 rounded-lg shadow-lg px-3 py-2">
@@ -107,7 +107,7 @@ const Navbar = () => {
                             </div>
                         </>
                     ) : (
-                        <button onClick={openMenu} className="text-black ">
+                        <button onClick={openMenu} className="text-white ">
                             <IconMenu2></IconMenu2>
                         </button>
                     )}
