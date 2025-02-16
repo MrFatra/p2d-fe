@@ -41,7 +41,7 @@ const FAQ = () => {
                         {faqs.map((faq) => (
                             <div key={faq.id} className="group">
                                 <label htmlFor={faq.id} className="flex justify-between items-center cursor-pointer">
-                                    <div className="text-shades font-bold text-sm flex-1">{faq.question}</div>
+                                    <div className="text-shades font-bold text-sm md:text-lg flex-1">{faq.question}</div>
                                     <IconCircleChevronDown className="text-shades transform transition-transform duration-200 group-hover:rotate-180" />
                                 </label>
                                 <input type="checkbox" id={faq.id} className="hidden peer" />
