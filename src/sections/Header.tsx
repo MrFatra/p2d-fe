@@ -4,35 +4,33 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <section
-      id="e-learning"
       className="lg:mt-32 bg-cover bg-center bg-no-repeat"
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center center",
-        backgroundAttachment: "fixed", // Parallax effect
+        backgroundAttachment: "fixed",
       }}
     >
-      <div className="lg:mt-24 mt-24 gap-14 justify-center flex flex-wrap items-center px-6 lg:px-20 text-foreground">
-        {/* Konten Teks */}
-        <div className="w-full self-center lg:w-1/3">
-          <h3 className="text-xl font-semibold md:text-xl lg:text-xl text-custom-emerald underline">
+      <div className="lg:mt-24 mt-36 gap-14 justify-center flex flex-wrap items-center px-10 lg:px-20 text-foreground">
+
+        <div className="w-full self-center lg:w-1/3 text-center lg:text-start">
+          <h3 className="text-2xl font-bold text-custom-emerald">
             Posyandu Peduli Desa
           </h3>
-          <h2 className="font-bold text-lg mb-4 mt-2 lg:text-4xl">
+          <h2 className="font-bold text-xl lg:mb-4 mt-2 lg:text-2xl xl:text-4xl">
             Merangkul Keluarga untuk Masa Depan Sehat Bersama.
           </h2>
           <Link
             to="/"
-            className="lg:flex items-center justify-center gap-3 mt-10 w-1/2 hidden border-2 border-custom-emerald py-2.5 px-5 rounded-lg font-bold text-custom-emerald hover:shadow-lg hover:shadow-custom-emerald"
+            className="lg:flex inline-flex items-center justify-center gap-3 lg:mt-10 mt-5 border-2 border-custom-emerald py-2.5 px-5 rounded-lg font-bold text-custom-emerald hover:shadow-lg hover:bg-custom-emerald hover:text-white transition-all duration-200 "
           >
             Ayo Mulai <IconArrowRight />
           </Link>
         </div>
-        {/* Gambar Ilustrasi */}
+
         <div className="hidden lg:block lg:w-1/2 lg:pl-10">
           <img
             src="images/hero.png"
-            alt="E-Learning Illustration"
             className="w-full mx-auto lg:ml-auto"
           />
         </div>

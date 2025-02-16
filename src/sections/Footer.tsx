@@ -2,7 +2,7 @@ import { IconPhone } from "@tabler/icons-react";
 
 const Footer = () => {
     return (
-        <div className="mt-28 px-5 md:px-20 xl:px-28 py-20 bg-gradient-to-br from-custom-emerald to-emerald-300 text-white">
+        <div className="mt-28 px-5 md:px-10 lg:px-20 xl:px-28 py-20 bg-gradient-to-br from-custom-emerald to-emerald-300 text-white">
             <div className="flex flex-col md:flex-row gap-10 md:gap-20">
                 
                 <div className="flex flex-col gap-5 flex-1">
@@ -44,7 +44,7 @@ const Footer = () => {
                     <p className="text-xs md:text-sm font-light text-center md:text-left max-w-md">
                         "Berbagi cerita dan konsultasi dengan bidan kami untuk solusi terbaik. Kami siap mendampingi kesehatan Anda dan buah hati."
                     </p>
-                    <div className="flex gap-3 rounded-lg border p-2 mt-5 hover:bg-white/10 transition-colors cursor-pointer">
+                    <div className="flex gap-3 rounded-lg border py-2 px-3 mt-5 hover:bg-white/10 transition-colors cursor-pointer lg:text-base text-sm">
                         <IconPhone size={20} />
                         <p>Hubungi Kami</p>
                     </div>

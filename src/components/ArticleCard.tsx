@@ -9,7 +9,7 @@ type ArticleCardProps = {
 
 const ArticleCard = ({ title, description, link, image }: ArticleCardProps) => {
     return (
-        <div className="flex flex-col md:flex-row gap-6 rounded-2xl bg-white border-2 border-shades overflow-hidden">
+        <div className="flex flex-col md:flex-row gap-6 rounded-2xl bg-white border-2 border-shades overflow-hidden text-foreground">
             
             <div className="flex-1 p-6 md:p-10 flex flex-col order-2 md:order-1">
                 <div className="flex flex-col flex-1 justify-center">
